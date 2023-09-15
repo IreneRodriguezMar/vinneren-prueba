@@ -1,0 +1,45 @@
+body{
+    background-color: cornflowerblue;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container_semaforo{
+    width: 200px;
+    height: 400px;
+    border-radius: 30px;
+    display: grid;
+    place-items: center;
+    background-color: #015c01;
+    padding: 10px;
+}
+.luces{
+    display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color:grey;
+    position: relative;
+}
+.luces::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 5%;
+}
+.red{
+    background-color: #c00000 ;
+    box-shadow: 0 0 10px 1px #c00000 ;
+}
+.yellow{
+    background-color: #dfb700;
+    box-shadow: 0 0 10px 1px #dfb700;
+}
+.green{
+    background-color: #009f00;
+    box-shadow: 0 0 10px 1px #009f00;
+}
